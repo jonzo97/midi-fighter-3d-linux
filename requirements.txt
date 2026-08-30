@@ -1,0 +1,9 @@
+python-rtmidi>=1.5.8
+mido>=1.3.2
+
+# rhythm game (game/)
+pygame>=2.6
+numpy>=1.26
+
+# dev
+pytest>=8.0

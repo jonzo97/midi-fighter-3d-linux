@@ -1,0 +1,8 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# internal working notes (superseded by docs/MIDIFIGHTER-3D-HACKING.md)
+.research-brief.md

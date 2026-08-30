@@ -1,0 +1,6574 @@
+{
+  "unique": {
+    "control_change ch4 cc37": 3,
+    "note_on ch3 note37": 2,
+    "control_change ch4 cc36": 2,
+    "note_on ch3 note36": 1,
+    "note_off ch3 note36": 1,
+    "note_off ch3 note37": 1,
+    "control_change ch4 cc38": 2,
+    "note_on ch3 note38": 1,
+    "note_off ch3 note38": 1,
+    "control_change ch4 cc39": 2,
+    "note_on ch3 note39": 1,
+    "note_off ch3 note39": 1,
+    "control_change ch4 cc40": 2,
+    "note_on ch3 note40": 1,
+    "note_off ch3 note40": 1,
+    "control_change ch4 cc41": 2,
+    "note_on ch3 note41": 1,
+    "note_off ch3 note41": 1,
+    "control_change ch4 cc42": 2,
+    "note_on ch3 note42": 1,
+    "note_off ch3 note42": 1,
+    "control_change ch4 cc43": 2,
+    "note_on ch3 note43": 1,
+    "note_off ch3 note43": 1,
+    "control_change ch4 cc44": 2,
+    "note_on ch3 note44": 1,
+    "note_off ch3 note44": 1,
+    "control_change ch4 cc45": 2,
+    "note_on ch3 note45": 1,
+    "note_off ch3 note45": 1,
+    "control_change ch4 cc46": 2,
+    "note_on ch3 note46": 1,
+    "note_off ch3 note46": 1,
+    "control_change ch4 cc47": 2,
+    "note_on ch3 note47": 1,
+    "note_off ch3 note47": 1,
+    "control_change ch4 cc48": 2,
+    "note_on ch3 note48": 1,
+    "note_off ch3 note48": 1,
+    "control_change ch4 cc49": 2,
+    "note_on ch3 note49": 1,
+    "note_off ch3 note49": 1,
+    "control_change ch4 cc50": 2,
+    "note_on ch3 note50": 1,
+    "note_off ch3 note50": 1,
+    "control_change ch4 cc51": 2,
+    "note_on ch3 note51": 1,
+    "note_off ch3 note51": 1,
+    "note_on ch4 note0": 1,
+    "note_off ch4 note0": 1,
+    "note_on ch4 note1": 1,
+    "note_off ch4 note1": 1,
+    "note_on ch4 note2": 1,
+    "note_off ch4 note2": 1,
+    "note_on ch4 note3": 1,
+    "note_off ch4 note3": 1,
+    "note_on ch4 note40": 1,
+    "note_off ch4 note40": 1,
+    "note_on ch4 note39": 1,
+    "note_off ch4 note39": 1,
+    "note_on ch4 note38": 1,
+    "note_off ch4 note38": 1,
+    "note_on ch4 note43": 1,
+    "note_off ch4 note43": 1,
+    "note_on ch4 note42": 1,
+    "note_off ch4 note42": 1,
+    "note_on ch4 note41": 1,
+    "note_off ch4 note41": 1,
+    "control_change ch4 cc1": 99,
+    "control_change ch4 cc2": 309,
+    "control_change ch4 cc0": 171,
+    "control_change ch4 cc3": 263
+  },
+  "events": [
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 37,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 37,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 36,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 36,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 36,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 36,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 37,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 37,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 37,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 37,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 38,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 38,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 38,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 38,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 39,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 39,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 39,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 39,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 40,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 40,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 40,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 40,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 41,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 41,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 41,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 41,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 42,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 42,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 42,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 42,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 43,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 43,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 43,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 43,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 44,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 44,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 44,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 44,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 45,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 45,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 45,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 45,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 46,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 46,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 46,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 46,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 47,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 47,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 47,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 47,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 48,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 48,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 48,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 48,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 49,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 49,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 49,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 49,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 50,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 50,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 50,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 50,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 51,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 51,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 51,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 51,
+      "velocity": 127,
+      "channel": 2
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 0,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 0,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 1,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 1,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 2,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 2,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 3,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 3,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 40,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 40,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 39,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 39,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 38,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 38,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 43,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 43,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 42,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 42,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_on",
+      "time": 0,
+      "note": 41,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "note_off",
+      "time": 0,
+      "note": 41,
+      "velocity": 127,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 19,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 23,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 29,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 31,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 39,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 41,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 43,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 44,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 45,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 47,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 48,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 47,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 45,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 44,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 43,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 41,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 39,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 31,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 29,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 23,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 19,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 19,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 23,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 39,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 39,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 31,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 29,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 19,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 29,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 31,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 43,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 45,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 47,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 49,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 51,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 52,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 53,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 54,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 56,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 57,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 59,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 60,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 61,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 62,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 64,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 65,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 67,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 69,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 70,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 76,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 77,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 81,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 82,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 84,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 85,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 86,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 85,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 84,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 82,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 81,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 79,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 76,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 70,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 69,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 67,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 65,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 61,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 56,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 54,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 51,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 49,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 44,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 31,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 43,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 45,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 47,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 53,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 60,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 70,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 76,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 81,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 85,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 90,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 93,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 95,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 97,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 102,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 104,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 107,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 110,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 112,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 114,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 24,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 126,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 59,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 67,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 76,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 81,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 84,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 89,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 91,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 93,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 91,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 90,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 88,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 86,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 84,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 82,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 79,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 77,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 76,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 69,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 67,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 64,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 61,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 53,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 49,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 44,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 38,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 33,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 45,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 59,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 79,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 86,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 89,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 94,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 97,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 99,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 101,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 102,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 104,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 106,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 107,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 110,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 112,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 125,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 120,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 115,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 110,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 108,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 107,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 106,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 105,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 103,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 102,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 101,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 99,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 98,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 97,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 96,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 95,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 96,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 98,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 99,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 101,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 102,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 103,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 104,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 105,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 106,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 107,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 108,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 110,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 112,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 114,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 115,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 120,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 126,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 126,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 125,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 120,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 107,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 105,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 103,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 95,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 88,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 69,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 65,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 62,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 56,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 51,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 43,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 23,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 29,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 44,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 48,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 52,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 62,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 85,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 88,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 89,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 91,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 93,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 95,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 98,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 99,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 97,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 86,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 54,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 41,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 41,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 48,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 53,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 88,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 96,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 101,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 104,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 126,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 122,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 120,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 115,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 106,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 103,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 96,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 92,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 89,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 86,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 81,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 77,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 73,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 69,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 66,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 63,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 59,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 48,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 35,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 19,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 1,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 21,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 26,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 41,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 60,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 65,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 70,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 78,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 90,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 94,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 98,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 103,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 105,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 114,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 125,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 126,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 127,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 125,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 118,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 116,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 114,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 113,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 112,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 109,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 108,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 106,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 104,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 103,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 101,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 99,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 96,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 93,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 90,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 79,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 75,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 72,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 67,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 62,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 55,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 50,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 46,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 44,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 40,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 36,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 28,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 23,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 17,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 15,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 126,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 124,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 123,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 121,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 119,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 13,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 117,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 114,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 111,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 10,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 108,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 104,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 102,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 100,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 97,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 95,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 93,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 90,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 87,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 83,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 80,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 77,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 74,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 71,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 68,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 65,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 62,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 58,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 54,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 51,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 48,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 45,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 2,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 42,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 39,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 37,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 34,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 32,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 30,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 29,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 27,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 25,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 23,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 22,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 20,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 18,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 16,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 14,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 12,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 11,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 9,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 8,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 7,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 6,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 0,
+      "value": 0,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 5,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 4,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 3,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 2,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 1,
+      "channel": 3
+    },
+    {
+      "type": "control_change",
+      "time": 0,
+      "control": 3,
+      "value": 0,
+      "channel": 3
+    }
+  ]
+}

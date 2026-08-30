@@ -1,0 +1,74 @@
+# Midi Fighter 3D macro controller — sample config.
+#
+# Pads are 0..15 (top-left -> bottom-right). Bank buttons 1..4 switch layers
+# per [meta] banks. Tilt edges: left/forward/right/back. Reload by restarting
+# macro/main.py. Everything here works today (input needs no LED unblock).
+
+[meta]
+start = "sway"
+banks = ["sway", "window", "media", "helldivers"]
+# Tilt sensitivity: fires when the edge CC rises past tilt_high, re-arms below
+# tilt_low (0..127). Lower tilt_high = lighter tilt activates. Tune with
+# `python tools/tilt_monitor.py` to see your real values, or override live with
+# `python -m macro.main --tilt-high N`.
+tilt_high = 45
+tilt_low = 18
+
+# ---------------------------------------------------------------------------
+# Layer 1 (bank button 1): Sway workspace switching. Pads 0-8 -> workspaces 1-9.
+# ---------------------------------------------------------------------------
+[layers.sway.pads]
+"0" = { type = "sway", cmd = "workspace number 1" }
+"1" = { type = "sway", cmd = "workspace number 2" }
+"2" = { type = "sway", cmd = "workspace number 3" }
+"3" = { type = "sway", cmd = "workspace number 4" }
+"4" = { type = "sway", cmd = "workspace number 5" }
+"5" = { type = "sway", cmd = "workspace number 6" }
+"6" = { type = "sway", cmd = "workspace number 7" }
+"7" = { type = "sway", cmd = "workspace number 8" }
+"8" = { type = "sway", cmd = "workspace number 9" }
+"12" = { type = "sway", cmd = "fullscreen toggle" }
+"13" = { type = "sway", cmd = "floating toggle" }
+"14" = { type = "sway", cmd = "layout toggle split" }
+"15" = { type = "sway", cmd = "kill" }
+
+[layers.sway.tilt]
+forward = { type = "sway", cmd = "workspace next" }
+back = { type = "sway", cmd = "workspace prev" }
+
+[layers.sway.sides]
+"0" = { type = "notify", text = "Sway layer" }
+
+# ---------------------------------------------------------------------------
+# Layer 2 (bank 2): window movement (move focused container to workspace N).
+# ---------------------------------------------------------------------------
+[layers.window.pads]
+"0" = { type = "sway", cmd = "move container to workspace number 1" }
+"1" = { type = "sway", cmd = "move container to workspace number 2" }
+"2" = { type = "sway", cmd = "move container to workspace number 3" }
+"3" = { type = "sway", cmd = "move container to workspace number 4" }
+"12" = { type = "sway", cmd = "focus left" }
+"13" = { type = "sway", cmd = "focus down" }
+"14" = { type = "sway", cmd = "focus up" }
+"15" = { type = "sway", cmd = "focus right" }
+
+# ---------------------------------------------------------------------------
+# Layer 3 (bank 3): media / desktop keys (wtype -> keysyms).
+# ---------------------------------------------------------------------------
+[layers.media.pads]
+"0" = { type = "key", key = "XF86AudioPlay" }
+"1" = { type = "key", key = "XF86AudioPrev" }
+"2" = { type = "key", key = "XF86AudioNext" }
+"3" = { type = "key", key = "XF86AudioMute" }
+"4" = { type = "shell", cmd = "grim ~/Pictures/shot-$(date +%s).png" }
+
+# ---------------------------------------------------------------------------
+# Layer 4 (bank 4): game macros (example: Helldivers-style ability combos).
+# NOTE: keystrokes use wtype (Wayland). For XWayland/Proton games that ignore
+# wtype, install ydotool (uinput) — a ydotool backend is the planned upgrade.
+# ---------------------------------------------------------------------------
+[layers.helldivers.pads]
+"0" = { type = "text", text = "wsww" }             # example stratagem input
+"1" = { type = "text", text = "swws" }
+"2" = { type = "key", mods = ["ctrl"], key = "1" }
+"3" = { type = "key", key = "r" }                  # reload
