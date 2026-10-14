@@ -2,7 +2,8 @@
 
 Behaviour:
     - Switching layer (bank button) repaints the grid: pads that have an action
-      on the active layer glow in that layer's DIM color; unmapped pads go dark.
+      on the active layer glow in that layer's DIM color (or the pad's own
+      ``color`` from its action spec); unmapped pads go dark.
     - Pressing a mapped pad flashes it BRIGHT (same hue) then restores to dim,
       so you get tactile-plus-visual confirmation an action fired.
 
@@ -44,9 +45,9 @@ class LayerLeds:
         """Repaint the whole grid for a newly active layer."""
         with self._lock:
             self._layer = layer
-            dim = p.color_velocity(layer.color, bright=False)
             self._base = {
-                pad: (dim if pad in layer.pads else p.COLOR_OFF)
+                pad: (p.color_velocity(self._pad_color(layer, pad), bright=False)
+                      if pad in layer.pads else p.COLOR_OFF)
                 for pad in range(GRID)
             }
             self._render_all_locked()
@@ -56,7 +57,8 @@ class LayerLeds:
         with self._lock:
             if self._layer is None or pad not in self._layer.pads:
                 return
-            bright = p.color_velocity(self._layer.color, bright=True)
+            bright = p.color_velocity(self._pad_color(self._layer, pad),
+                                      bright=True)
             self._sink.set_color(pad, bright)
             self._sink.flush(force=True)
             old = self._timers.pop(pad, None)
@@ -78,6 +80,12 @@ class LayerLeds:
             self._sink.flush(force=True)
 
     # --- internals ----------------------------------------------------------
+    @staticmethod
+    def _pad_color(layer, pad: int) -> str:
+        """A pad's own palette color if its spec names a valid one, else the layer's."""
+        own = (layer.pads.get(pad) or {}).get("color")
+        return own if own in p.COLORS else layer.color
+
     def _restore(self, pad: int) -> None:
         with self._lock:
             self._sink.set_color(pad, self._base.get(pad, p.COLOR_OFF))

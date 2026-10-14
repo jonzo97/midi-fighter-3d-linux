@@ -25,8 +25,8 @@ CONFIG = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))
 def test_load_sample_config():
     cfg = load_config(CONFIG)
     assert cfg.start == "sway"
-    assert cfg.banks == ["sway", "window", "media", "helldivers"]
-    assert set(cfg.layers) == {"sway", "window", "media", "helldivers"}
+    assert cfg.banks == ["sway", "window", "media", "review"]
+    assert set(cfg.layers) == {"sway", "window", "media", "review"}
     # pad 0 on sway switches to workspace 1
     assert cfg.layers["sway"].pads[0]["cmd"] == "workspace number 1"
     assert cfg.layers["sway"].tilt["forward"]["cmd"] == "workspace next"
@@ -90,8 +90,10 @@ def test_bank_button_switches_layer():
 
 def test_side_button_action():
     ctl, log = _controller()
-    res = ctl.handle(SideButton(index=0))
+    # Side 3 is the global "which layer?" default: a notification.
+    res = ctl.handle(SideButton(index=3))
     assert res is not None and res.argv[0] == "notify-send"
+    assert res.argv[-1] == "Layer: sway (bank 1)"
 
 
 def test_tilt_debounce_fires_once():
