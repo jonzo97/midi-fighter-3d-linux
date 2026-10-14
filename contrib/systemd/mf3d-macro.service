@@ -1,0 +1,30 @@
+# Midi Fighter 3D macro controller as a systemd user service.
+# Needs sway's WAYLAND_DISPLAY and SWAYSOCK in the user manager (they are on
+# bigduke: `systemctl --user show-environment`). Waits for the device if it is
+# unplugged at login and reconnects after an unplug; restarts if it crashes.
+#
+# Enable (once):
+#   mkdir -p ~/.config/systemd/user
+#   ln -sf ~/midi/contrib/systemd/mf3d-macro.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now mf3d-macro.service
+# Watch:  journalctl --user -u mf3d-macro -f
+# Stop:   systemctl --user disable --now mf3d-macro.service
+
+[Unit]
+Description=Midi Fighter 3D macro controller (review bank follows sway)
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=%h/midi
+Environment=PYTHONUNBUFFERED=1
+ExecStart=%h/midi/.venv/bin/python -m macro.main --wait-device
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=graphical-session.target
