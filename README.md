@@ -80,8 +80,27 @@ python -m macro.main               # live — fires real Sway/keystroke actions
 ```
 
 Edit `macro/config.toml` to remap. Action types: `sway` (swaymsg), `key`/`text`
-(wtype), `shell`, `notify`. For XWayland/Proton **games** (Helldivers), install
-`ydotool` — a ydotool backend is the planned upgrade (wtype won't reach them).
+(wtype), `shell`, `notify`, `layer` (`to` = a layer, `previous` or `show`),
+`none` (blank a side default). XWayland apps (Hydrus Client, Proton games) may
+ignore wtype; that needs `ydotool` (uinput, sudo to set up), not done.
+
+**Banks:** 1 sway desks · 2 window moves · 3 media · 4 **review** (hyAway's
+review page: same pad, same verdict as the Tower's deck bank). The printable
+map of all 4 banks × 16 pads + 6 side keys is [docs/CHEATSHEET.md](docs/CHEATSHEET.md),
+generated from the config (`python tools/cheatsheet.py --write`).
+
+**Side keys:** `[sides]` works on every bank; `[layers.<bank>.sides]` overrides.
+
+**Desk follow (`[auto]`):** focus workspace 9 or 10 and the review bank switches
+on; leave and your bank comes back; a bank press wins until the next desk
+change. When the Tower page is the focused window (never checked on 9/10) the
+pads, sides and tilt go quiet so the Tower's Web MIDI alone answers. Desks are
+judged by number; titles are only substring-tested in memory for the Tower
+marker and never logged. `--no-follow` turns it off.
+
+**Autostart:** `contrib/systemd/mf3d-macro.service` (user unit; the enable
+commands are in its header). It waits for the device at login and reconnects
+after an unplug (`--wait-device`).
 
 ## Rhythm game
 
@@ -115,8 +134,9 @@ macro/              macro-controller app
   actions.py        sway/key/text/shell/notify backends
   config.py         TOML loader -> layers
   engine.py         MacroController (events -> actions, tilt debounce)
-  main.py           python -m macro.main [--dry-run]
-  config.toml       sample: sway / window / media / helldivers layers
+  desks.py          sway desk follower (review bank on 9/10, Tower mute)
+  main.py           python -m macro.main [--dry-run] [--wait-device]
+  config.toml       sway / window / media / review banks + side keys
 game/               rhythm game
   beatmap.py        Note/Beatmap + procedural generator + JSON load/save
   engine.py         pygame-free scoring/timing core (unit tested)
