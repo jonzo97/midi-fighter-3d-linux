@@ -401,6 +401,13 @@ class TestTowerMute(unittest.TestCase):
         self.assertEqual(asked, [99])
         self.assertTrue(self.ctl.muted)
 
+    def test_resubscribe_unmutes(self):
+        # Review finding fb3ba57d: the sway subscription restarts (follower
+        # .start) on the same desk while muted: pads must come back.
+        self.assertTrue(self.ctl.muted)
+        self.follow.start(2)
+        self.assertFalse(self.ctl.muted)
+
     def test_desk_query_regex_by_number(self):
         from macro.desks import public_desk_regex
         import re

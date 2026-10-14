@@ -195,7 +195,13 @@ class DeskFollower:
         return frozenset(self.auto.review_workspaces)
 
     def start(self, workspace: Optional[int]) -> None:
-        """Set the starting desk (from focused_workspace())."""
+        """(Re)start following at a desk (from focused_workspace()).
+
+        Called on every (re)subscription. Unmutes first: the window events
+        that would have ended a Tower mute may have been lost while sway was
+        away, and the next focus event decides again.
+        """
+        self.ctl.set_muted(False)
         self.on_workspace(workspace)
 
     # --- events -------------------------------------------------------------
