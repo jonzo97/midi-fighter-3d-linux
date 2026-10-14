@@ -84,11 +84,17 @@ def ws_event(num: int, change: str = "focus") -> dict:
 
 
 def win_event(title: str, change: str = "focus", focused: bool = True,
-              app_id: str = "brave-browser", guard: bool = False) -> dict:
+              app_id: str = "brave-browser", guard: bool = False,
+              con_id: int = 7) -> dict:
     cls = NoNameDict if guard else dict
     return {"change": change,
-            "container": cls(type="con", app_id=app_id, focused=focused,
-                             name=title)}
+            "container": cls(id=con_id, type="con", app_id=app_id,
+                             focused=focused, name=title)}
+
+
+def on_desk(ws: list):
+    """Fake window_public: the window sits on the focused desk ws[0]."""
+    return lambda _con_id: ws[0] not in (9, 10)
 
 
 class FakeSink(LedSink):
@@ -211,6 +217,7 @@ class TestDeskFollow(unittest.TestCase):
         self.ws = [3]
         self.follow = DeskFollower(self.ctl, self.ctl.config.auto,
                                    workspace_now=lambda: self.ws[0],
+                                   window_public=on_desk(self.ws),
                                    log=self.log.append)
         self.follow.start(3)
 
@@ -234,7 +241,8 @@ class TestDeskFollow(unittest.TestCase):
 
     def test_start_on_private_desk(self):
         ctl, _ = make()
-        follow = DeskFollower(ctl, ctl.config.auto, workspace_now=lambda: 10)
+        follow = DeskFollower(ctl, ctl.config.auto, workspace_now=lambda: 10,
+                              window_public=on_desk([10]))
         follow.start(10)
         self.assertEqual(ctl.current, "review")
         follow.feed(ws_event(2))
@@ -310,6 +318,7 @@ class TestTowerMute(unittest.TestCase):
         self.ws = [2]
         self.follow = DeskFollower(self.ctl, self.ctl.config.auto,
                                    workspace_now=lambda: self.ws[0],
+                                   window_public=on_desk(self.ws),
                                    log=self.log.append)
         self.follow.start(2)
         self.follow.feed(win_event(TOWER_TITLE))
@@ -352,12 +361,54 @@ class TestTowerMute(unittest.TestCase):
     def test_marker_is_configurable(self):
         ctl, _ = make()
         ctl.config.auto.tower_markers = ("My Tower",)
-        follow = DeskFollower(ctl, ctl.config.auto, workspace_now=lambda: 1)
+        follow = DeskFollower(ctl, ctl.config.auto, workspace_now=lambda: 1,
+                              window_public=on_desk([1]))
         follow.start(1)
         follow.feed(win_event(TOWER_TITLE))
         self.assertFalse(ctl.muted)
         follow.feed(win_event("my tower - Brave"))
         self.assertTrue(ctl.muted)
+
+    def test_title_gate_uses_the_windows_own_desk(self):
+        # Review finding f6760985: focus left 9/10 before the desk query, but
+        # the event's window is still on desk 9. Its title must not be read.
+        self.follow.feed(win_event("A terminal", app_id="kitty"))
+        self.ws[0] = 3
+        follow = DeskFollower(self.ctl, self.ctl.config.auto,
+                              workspace_now=lambda: 3,
+                              window_public=lambda con_id: False)
+        follow.start(3)
+        follow.feed(win_event(SECRET, guard=True, con_id=42))
+        follow.feed(win_event(SECRET, change="title", guard=True, con_id=42))
+        self.assertFalse(self.ctl.muted)
+
+    def test_unconfirmed_window_title_is_not_read(self):
+        # A failed or empty desk query (window closed, sway busy) reads nothing.
+        follow = DeskFollower(self.ctl, self.ctl.config.auto,
+                              workspace_now=lambda: 2,
+                              window_public=lambda con_id: None)
+        follow.start(2)
+        follow.feed(win_event(SECRET, guard=True, con_id=43))
+        self.assertFalse(self.ctl.muted)
+
+    def test_window_public_gets_the_events_con_id(self):
+        asked = []
+        follow = DeskFollower(self.ctl, self.ctl.config.auto,
+                              workspace_now=lambda: 2,
+                              window_public=lambda con_id: asked.append(con_id) or True)
+        follow.start(2)
+        follow.feed(win_event(TOWER_TITLE, con_id=99))
+        self.assertEqual(asked, [99])
+        self.assertTrue(self.ctl.muted)
+
+    def test_desk_query_regex_by_number(self):
+        from macro.desks import public_desk_regex
+        import re
+        rx = re.compile(public_desk_regex((9, 10)))
+        for name in ("1", "3", "90", "11", "2:web", "notes"):
+            self.assertTrue(rx.search(name), name)
+        for name in ("9", "10", "9:media", "10 private"):
+            self.assertFalse(rx.search(name), name)
 
     def test_tilt_does_not_fire_on_unmute_from_a_held_tilt(self):
         self.ctl.handle(Tilt(edge="forward", value=127))      # muted, held

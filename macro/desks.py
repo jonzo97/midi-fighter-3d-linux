@@ -14,9 +14,10 @@ MacroController:
 
 Privacy contract (Jon's private desks):
     - Review desks are decided by workspace NUMBER only.
-    - A window's title is looked at only to spot the Tower, only after the
-      focused desk has been confirmed NOT to be a review desk, only as an
-      in-memory substring test; it is never stored, logged or sent.
+    - A window's title is looked at only to spot the Tower, only after sway
+      has confirmed that THIS window (its con_id, via criteria) sits on a
+      non-review desk, only as an in-memory substring test; it is never
+      stored, logged or sent. A closed window or a failed query reads nothing.
     - Log lines carry workspace numbers and layer names, never titles or
       app ids. Errors are logged by exception class only.
     The raw event bytes do pass through this process's memory (sway sends
@@ -26,6 +27,7 @@ Key components:
     parse_line          -- one subscribe line -> dict (or None)
     DeskFollower        -- pure state machine, fed event dicts (unit tested)
     focused_workspace   -- focused workspace number via get_workspaces
+    window_on_public_desk -- is this con_id on a non-review desk? (criteria)
     SwayWatcher         -- background thread running the subscription
 """
 
@@ -105,6 +107,60 @@ def focused_workspace(env: Optional[dict] = None) -> Optional[int]:
     return None
 
 
+def public_desk_regex(review_workspaces) -> str:
+    """Sway workspace-name regex matching every desk except the review ones.
+
+    A workspace's number is its name's leading digits, so "9" and "9:media"
+    are desk 9 while "90" is not.
+
+    Args:
+        review_workspaces: Iterable of review desk numbers.
+
+    Returns:
+        str: PCRE (sway criteria) pattern.
+    """
+    nums = "|".join(str(int(n)) for n in sorted(set(review_workspaces)))
+    return f"^(?!(?:{nums})(?:[^0-9]|$))" if nums else "^"
+
+
+def window_on_public_desk(con_id: int, review_workspaces,
+                          env: Optional[dict] = None) -> Optional[bool]:
+    """Ask sway whether one window sits on a non-review desk (no titles involved).
+
+    Runs ``[con_id=N workspace="<public regex>"] nop``: success means the
+    window exists and its desk is not a review desk.
+
+    Args:
+        con_id: The window's sway container id (from the event).
+        review_workspaces: Review desk numbers.
+        env: Environment with SWAYSOCK; found with sway_env() when None.
+
+    Returns:
+        bool | None: True if public, False if not (or gone), None if sway
+        could not be asked.
+    """
+    if not isinstance(con_id, int) or isinstance(con_id, bool):
+        return None
+    env = env or sway_env()
+    if env is None:
+        return None
+    rx = public_desk_regex(review_workspaces)
+    try:
+        out = subprocess.run(
+            [SWAYMSG, "-r", f'[con_id={con_id} workspace="{rx}"] nop'],
+            capture_output=True, text=True, env=env,
+            timeout=QUERY_TIMEOUT_S, check=False).stdout
+        replies = json.loads(out or "[]")
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return None
+    if not isinstance(replies, list) or not replies \
+            or not isinstance(replies[0], dict):
+        return None
+    if replies[0].get("success") is True:
+        return True
+    return False if replies[0].get("error") == "No matching node." else None
+
+
 class DeskFollower:
     """Turns sway workspace/window events into layer switches and Tower mute.
 
@@ -112,17 +168,24 @@ class DeskFollower:
         controller: The MacroController to drive.
         auto: AutoConfig (review layer, review desks, Tower markers).
         workspace_now: Callable returning the focused workspace number (or
-            None); asked on every window focus event so a title is never
-            looked at before the desk is known. Defaults to focused_workspace.
+            None); asked on every window focus event to catch desk changes.
+            Defaults to focused_workspace.
+        window_public: Callable(con_id) -> True only when sway confirms that
+            window is on a non-review desk; the title is read only then.
+            Defaults to window_on_public_desk.
         log: Callable(str) for title-free log lines.
     """
 
     def __init__(self, controller, auto,
                  workspace_now: Optional[Callable[[], Optional[int]]] = None,
+                 window_public: Optional[Callable[[int], Optional[bool]]] = None,
                  log: Optional[Callable[[str], None]] = None) -> None:
         self.ctl = controller
         self.auto = auto
         self.workspace_now = workspace_now or focused_workspace
+        self.window_public = window_public or (
+            lambda con_id: window_on_public_desk(con_id,
+                                                 self.auto.review_workspaces))
         self.log = log or (lambda _s: None)
         self.workspace: Optional[int] = None
         self._saved: Optional[str] = None     # layer from before the review desks
@@ -161,6 +224,11 @@ class DeskFollower:
         if desk is None or desk in self.private:
             self.ctl.set_muted(False)                  # never look at the title
             return
+        # The focused desk may have moved on since this event: confirm THIS
+        # window's own desk before its title is looked at.
+        if self._ask_public(container.get("id")) is not True:
+            self.ctl.set_muted(False)
+            return
         self.ctl.set_muted(self._is_tower(container))
 
     def on_workspace(self, num: Optional[int]) -> None:
@@ -186,6 +254,13 @@ class DeskFollower:
             return self.workspace_now()
         except Exception as exc:  # noqa: BLE001 - a failed query must not kill the thread
             self.log(f"[desk] workspace query failed ({type(exc).__name__})")
+            return None
+
+    def _ask_public(self, con_id) -> Optional[bool]:
+        try:
+            return self.window_public(con_id)
+        except Exception as exc:  # noqa: BLE001 - a failed query reads nothing
+            self.log(f"[desk] window query failed ({type(exc).__name__})")
             return None
 
     def _is_tower(self, container: dict) -> bool:
