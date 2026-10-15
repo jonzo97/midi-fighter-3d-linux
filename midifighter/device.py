@@ -30,6 +30,12 @@ from .ports import find_input_name, find_output_name
 # Minimum seconds between physical output flushes (rate limit ~60 Hz).
 MIN_FLUSH_INTERVAL = 1.0 / 60.0
 
+# Four Banks Mode (factory default) moves the pads to notes 52-67, 68-83 and
+# 84-99 in banks 2-4. Those fold back onto the 16-pad grid so a layer works
+# whichever device bank is lit (the Tower's midi.js folds the same way).
+GRID_SIZE = 16
+BANK_COUNT = 4
+
 
 # --- Decoded input events ---------------------------------------------------
 @dataclass(frozen=True)
@@ -123,15 +129,22 @@ class MidiFighter3D:
         self._lock = threading.Lock()
 
     # --- lifecycle ----------------------------------------------------------
-    def open(self) -> "MidiFighter3D":
-        """Open input+output ports by name and start the input callback.
+    def open(self, output: bool = True) -> "MidiFighter3D":
+        """Open the ports by name and start the input callback.
+
+        Args:
+            output: Also open the output port (LEDs). With False the driver is
+                input-only and never writes to the device, not even on close.
 
         Returns:
             MidiFighter3D: self, for chaining.
+
+        Raises:
+            DeviceNotFoundError: If the device's ports are not present.
         """
-        out_name = find_output_name()
         in_name = find_input_name()
-        self._out = mido.open_output(out_name)
+        if output:
+            self._out = mido.open_output(find_output_name())
         self._in = mido.open_input(in_name, callback=self._on_midi)
         return self
 
@@ -161,16 +174,27 @@ class MidiFighter3D:
         if ev is not None and self.on_event is not None:
             self.on_event(ev)
 
+    def _pad_for_note(self, note: int) -> Optional[int]:
+        """Grid index for a pad note, folding Four Banks Mode banks 2-4 back."""
+        pad = self._note_to_pad.get(note)
+        if pad is not None:
+            return pad
+        first = self.pad_notes[0]
+        last = first + GRID_SIZE * BANK_COUNT - 1
+        if first + GRID_SIZE <= note <= last:
+            return self._note_to_pad.get(first + (note - first) % GRID_SIZE)
+        return None
+
     def _decode(self, msg: mido.Message) -> Optional[Event]:
         """Turn a raw mido Message into a decoded Event (or None to ignore)."""
         ch = getattr(msg, "channel", None)
         if msg.type == "note_on" and msg.velocity > 0 and ch == p.to_mido(p.INPUT_CHANNEL):
-            pad = self._note_to_pad.get(msg.note)
+            pad = self._pad_for_note(msg.note)
             if pad is not None:
                 return ButtonDown(pad=pad, note=msg.note, velocity=msg.velocity)
         elif (msg.type == "note_off" or (msg.type == "note_on" and msg.velocity == 0)) \
                 and ch == p.to_mido(p.INPUT_CHANNEL):
-            pad = self._note_to_pad.get(msg.note)
+            pad = self._pad_for_note(msg.note)
             if pad is not None:
                 return ButtonUp(pad=pad, note=msg.note)
         elif msg.type == "note_on" and msg.velocity > 0 and ch == p.to_mido(p.MOTION_CHANNEL):

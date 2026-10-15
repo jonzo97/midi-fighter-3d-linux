@@ -1,12 +1,17 @@
-# Midi Fighter 3D macro controller — sample config.
+# Midi Fighter 3D macro controller — Jon's config.
 #
-# Pads are 0..15 (top-left -> bottom-right). Bank buttons 1..4 switch layers
-# per [meta] banks. Tilt edges: left/forward/right/back. Reload by restarting
-# macro/main.py. Everything here works today (input needs no LED unblock).
+# Pads are 0..15 = notes 36..51: pad 0 is BOTTOM-LEFT, pad 3 bottom-right,
+# pad 12 top-left, pad 15 top-right (docs/MIDIFIGHTER-3D-HACKING.md §3).
+# Bank buttons 1..4 switch layers per [meta] banks. Tilt edges:
+# left/forward/right/back. Side buttons 0..5: [sides] below works on every
+# layer, a layer's own sides override it, {type = "none"} blanks one.
+# Optional per-action fields: label (cheat sheet), color (pad LED).
+# After editing, regenerate the printable sheet: python tools/cheatsheet.py --write
+# Reload by restarting macro/main.py (systemctl --user restart mf3d-macro).
 
 [meta]
 start = "sway"
-banks = ["sway", "window", "media", "helldivers"]
+banks = ["sway", "window", "media", "review"]
 # Tilt sensitivity: fires when the edge CC rises past tilt_high, re-arms below
 # tilt_low (0..127). Lower tilt_high = lighter tilt activates. Tune with
 # `python tools/tilt_monitor.py` to see your real values, or override live with
@@ -15,60 +20,109 @@ tilt_high = 45
 tilt_low = 18
 
 # ---------------------------------------------------------------------------
+# Desk follower (macro/desks.py). Focus on a review desk -> review layer;
+# leaving -> the layer you had. A bank press wins until the next desk change.
+# While the focused window (never on a review desk) has a tower marker in its
+# title, pads/sides/tilt do nothing: the Tower's own Web MIDI answers them.
+# Markers are matched in memory, case-insensitive, and never logged.
+# ---------------------------------------------------------------------------
+[auto]
+enabled = true
+review_layer = "review"
+review_workspaces = [9, 10]
+tower_markers = ["Sanguine Spire", "Summoning Tower"]
+
+# ---------------------------------------------------------------------------
+# Side buttons on every layer. 0-2 = one side (notes 38-40), 3-5 = the other
+# (41-43). Left/right and top/bottom below are inferred from the order in
+# tools/capture_log.json; the cheat sheet says how to check.
+# ---------------------------------------------------------------------------
+[sides]
+"2" = { type = "layer", to = "previous", label = "Previous layer" }
+"1" = { type = "sway", cmd = "workspace back_and_forth", label = "Last desk" }
+"0" = { type = "shell", cmd = "playerctl play-pause", label = "Play / pause" }
+"5" = { type = "sway", cmd = "fullscreen toggle", label = "Fullscreen" }
+"4" = { type = "shell", cmd = "pactl set-sink-mute @DEFAULT_SINK@ toggle", label = "Mute" }
+"3" = { type = "layer", to = "show", label = "Which layer?" }
+
+# ---------------------------------------------------------------------------
 # Layer 1 (bank button 1): Sway workspace switching. Pads 0-8 -> workspaces 1-9.
 # ---------------------------------------------------------------------------
 [layers.sway.pads]
-"0" = { type = "sway", cmd = "workspace number 1" }
-"1" = { type = "sway", cmd = "workspace number 2" }
-"2" = { type = "sway", cmd = "workspace number 3" }
-"3" = { type = "sway", cmd = "workspace number 4" }
-"4" = { type = "sway", cmd = "workspace number 5" }
-"5" = { type = "sway", cmd = "workspace number 6" }
-"6" = { type = "sway", cmd = "workspace number 7" }
-"7" = { type = "sway", cmd = "workspace number 8" }
-"8" = { type = "sway", cmd = "workspace number 9" }
-"12" = { type = "sway", cmd = "fullscreen toggle" }
-"13" = { type = "sway", cmd = "floating toggle" }
-"14" = { type = "sway", cmd = "layout toggle split" }
-"15" = { type = "sway", cmd = "kill" }
+"0" = { type = "sway", cmd = "workspace number 1", label = "Desk 1" }
+"1" = { type = "sway", cmd = "workspace number 2", label = "Desk 2" }
+"2" = { type = "sway", cmd = "workspace number 3", label = "Desk 3" }
+"3" = { type = "sway", cmd = "workspace number 4", label = "Desk 4" }
+"4" = { type = "sway", cmd = "workspace number 5", label = "Desk 5" }
+"5" = { type = "sway", cmd = "workspace number 6", label = "Desk 6" }
+"6" = { type = "sway", cmd = "workspace number 7", label = "Desk 7" }
+"7" = { type = "sway", cmd = "workspace number 8", label = "Desk 8" }
+"8" = { type = "sway", cmd = "workspace number 9", label = "Desk 9" }
+"12" = { type = "sway", cmd = "fullscreen toggle", label = "Fullscreen" }
+"13" = { type = "sway", cmd = "floating toggle", label = "Float" }
+"14" = { type = "sway", cmd = "layout toggle split", label = "Split" }
+"15" = { type = "sway", cmd = "kill", label = "Close window" }
 
 [layers.sway.tilt]
-forward = { type = "sway", cmd = "workspace next" }
-back = { type = "sway", cmd = "workspace prev" }
-
-[layers.sway.sides]
-"0" = { type = "notify", text = "Sway layer" }
+forward = { type = "sway", cmd = "workspace next", label = "Next desk" }
+back = { type = "sway", cmd = "workspace prev", label = "Previous desk" }
 
 # ---------------------------------------------------------------------------
 # Layer 2 (bank 2): window movement (move focused container to workspace N).
 # ---------------------------------------------------------------------------
 [layers.window.pads]
-"0" = { type = "sway", cmd = "move container to workspace number 1" }
-"1" = { type = "sway", cmd = "move container to workspace number 2" }
-"2" = { type = "sway", cmd = "move container to workspace number 3" }
-"3" = { type = "sway", cmd = "move container to workspace number 4" }
-"12" = { type = "sway", cmd = "focus left" }
-"13" = { type = "sway", cmd = "focus down" }
-"14" = { type = "sway", cmd = "focus up" }
-"15" = { type = "sway", cmd = "focus right" }
+"0" = { type = "sway", cmd = "move container to workspace number 1", label = "Move to 1" }
+"1" = { type = "sway", cmd = "move container to workspace number 2", label = "Move to 2" }
+"2" = { type = "sway", cmd = "move container to workspace number 3", label = "Move to 3" }
+"3" = { type = "sway", cmd = "move container to workspace number 4", label = "Move to 4" }
+"12" = { type = "sway", cmd = "focus left", label = "Focus left" }
+"13" = { type = "sway", cmd = "focus down", label = "Focus down" }
+"14" = { type = "sway", cmd = "focus up", label = "Focus up" }
+"15" = { type = "sway", cmd = "focus right", label = "Focus right" }
 
 # ---------------------------------------------------------------------------
 # Layer 3 (bank 3): media / desktop keys (wtype -> keysyms).
 # ---------------------------------------------------------------------------
 [layers.media.pads]
-"0" = { type = "key", key = "XF86AudioPlay" }
-"1" = { type = "key", key = "XF86AudioPrev" }
-"2" = { type = "key", key = "XF86AudioNext" }
-"3" = { type = "key", key = "XF86AudioMute" }
-"4" = { type = "shell", cmd = "grim ~/Pictures/shot-$(date +%s).png" }
+"0" = { type = "key", key = "XF86AudioPlay", label = "Play" }
+"1" = { type = "key", key = "XF86AudioPrev", label = "Prev track" }
+"2" = { type = "key", key = "XF86AudioNext", label = "Next track" }
+"3" = { type = "key", key = "XF86AudioMute", label = "Mute" }
+"4" = { type = "shell", cmd = "grim ~/Pictures/shot-$(date +%s).png", label = "Screenshot" }
 
 # ---------------------------------------------------------------------------
-# Layer 4 (bank 4): game macros (example: Helldivers-style ability combos).
-# NOTE: keystrokes use wtype (Wayland). For XWayland/Proton games that ignore
-# wtype, install ydotool (uinput) — a ydotool backend is the planned upgrade.
+# Layer 4 (bank 4): review — hyAway's review page in Brave (wtype keys).
+# Same finger, same verdict as the Tower's deck bank (bank 4 there too):
+#   top row:    undo | up   up   | -
+#   rows 2-3:   left | look look | right
+#   bottom row: -    | down down | -
+# right = keep, left = trash, up = keep + like, down = trash + dislike,
+# z = undo, t = immersive view (the Tower's "?" spot: look closer, verdict
+# stays). LED colours are the Tower's deck tones.
+# Tilt is off here: a firm pad press jolts the unit, and a stray tilt would
+# give the NEXT image a verdict. To try it, uncomment [layers.review.tilt].
 # ---------------------------------------------------------------------------
-[layers.helldivers.pads]
-"0" = { type = "text", text = "wsww" }             # example stratagem input
-"1" = { type = "text", text = "swws" }
-"2" = { type = "key", mods = ["ctrl"], key = "1" }
-"3" = { type = "key", key = "r" }                  # reload
+[layers.review.pads]
+"12" = { type = "key", key = "z", label = "Undo", color = "magenta" }
+"13" = { type = "key", key = "Up", label = "Keep + like", color = "yellow" }
+"14" = { type = "key", key = "Up", label = "Keep + like", color = "yellow" }
+"8" = { type = "key", key = "Left", label = "Trash", color = "red" }
+"9" = { type = "key", key = "t", label = "Immersive", color = "purple" }
+"10" = { type = "key", key = "t", label = "Immersive", color = "purple" }
+"11" = { type = "key", key = "Right", label = "Keep", color = "green" }
+"4" = { type = "key", key = "Left", label = "Trash", color = "red" }
+"5" = { type = "key", key = "t", label = "Immersive", color = "purple" }
+"6" = { type = "key", key = "t", label = "Immersive", color = "purple" }
+"7" = { type = "key", key = "Right", label = "Keep", color = "green" }
+"1" = { type = "key", key = "Down", label = "Trash + dislike", color = "blue" }
+"2" = { type = "key", key = "Down", label = "Trash + dislike", color = "blue" }
+
+[layers.review.sides]
+"1" = { type = "key", key = "z", label = "Undo" }
+"3" = { type = "key", key = "t", label = "Immersive" }
+
+# [layers.review.tilt]
+# left = { type = "key", key = "Left", label = "Trash" }
+# right = { type = "key", key = "Right", label = "Keep" }
+# forward = { type = "key", key = "Up", label = "Keep + like" }
+# back = { type = "key", key = "Down", label = "Trash + dislike" }
